@@ -3,7 +3,7 @@ description = "Lesson 1: first Ada program"
 version = "0.1.0-dev"
 
 authors = ["Thomas Fuzellier"]
-maintainers = ["fuzellier <thomas.fuzellier@outlook.fr>"]
+maintainers = ["Thomas Fuzellier <thomas.fuzellier@outlook.fr>"]
 maintainers-logins = ["thomas-fuzellier"]
 licenses = "MIT"
 website = ""
