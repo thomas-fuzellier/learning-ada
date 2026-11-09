@@ -15,7 +15,7 @@ alr run
 ## Lessons
 
 ### Phase 1 — Fundamentals
-- [ ] [01 — Getting started](lesson_01/)
+- [x] [01 — Getting started](lesson_01/)
 - [ ] 02 — Variables and scalar types
 - [ ] 03 — Defining your own types
 - [ ] 04 — Control structures
