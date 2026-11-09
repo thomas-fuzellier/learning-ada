@@ -1,3 +1,4 @@
+--  Learning how to search for procedures for lesson 01
 with Ada.Text_IO;
 use Ada.Text_IO;
 
