@@ -1,4 +1,4 @@
---  Prints a framed banner for lesson 2, followed by the author's name
+--  Prints a framed banner for lesson 1, followed by the author's name
 with Ada.Text_IO;
 
 procedure Ex01_Banner is
