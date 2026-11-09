@@ -1,0 +1,15 @@
+name = "lesson_01"
+description = "Lesson 1: first Ada program"
+version = "0.1.0-dev"
+
+authors = ["Thomas Fuzellier"]
+maintainers = ["fuzellier <thomas.fuzellier@outlook.fr>"]
+maintainers-logins = ["thomas-fuzellier"]
+licenses = "MIT"
+website = ""
+tags = []
+
+executables = ["lesson_01"]
+
+[build-switches]
+"*".compile_checks = "Errors"
