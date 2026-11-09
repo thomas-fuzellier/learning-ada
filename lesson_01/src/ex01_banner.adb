@@ -1,5 +1,4 @@
---  Exercise number 1 of my Ada's course
---  Subject : creation of a banner in Ada via the basic function
+--  Prints a framed banner for lesson 1, followed by the author's name
 with Ada.Text_IO;
 
 procedure Ex01_Banner is
