@@ -1,7 +1,7 @@
 --  Print a mission with a briefing for lesson 02
 with Ada.Text_IO; use Ada.Text_IO;
 
-procedure Ex02_mission_brief is
+procedure Ex02_Mission_Brief is
 begin
    --  En-tête de la mission
    Put_Line ("=============================");
@@ -22,4 +22,4 @@ begin
    New_Line;
    --  Conclusion
    Put_Line ("-- End of briefing --");
-end Ex02_mission_brief;
+end Ex02_Mission_Brief;
