@@ -1,4 +1,4 @@
---  Practice in debugging programs for lesson 01
+--  Prints the radar system status report
 with Ada.Text_IO;
 use Ada.Text_IO;
 

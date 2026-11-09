@@ -1,4 +1,4 @@
---  Learning how to search for procedures for lesson 01
+--  Prints a target status table, aligned with Set_Col
 with Ada.Text_IO;
 use Ada.Text_IO;
 
