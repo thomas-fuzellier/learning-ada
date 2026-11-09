@@ -1,14 +1,16 @@
---  Print a mission with a briefing for lesson 02
+--  Print a mission with a briefing for lesson 01
 with Ada.Text_IO; use Ada.Text_IO;
 
 procedure Ex02_Mission_Brief is
 begin
-   --  En-tête de la mission
+
+   --  Mission header
    Put_Line ("=============================");
-   Put_Line ("       MISSION BRIEFING      ");
+   Put_Line ("       MISSION BRIEFING");
    Put_Line ("=============================");
    New_Line;
-   --  Briefing de la mission
+
+   --  Mission briefing
    Put ("Operation:");
    Put (" ");
    Put_Line ("""Silent Falcon""");
@@ -20,6 +22,7 @@ begin
    Put_Line ("  2. Review every line.");
    Put_Line ("  3. Report to command.");
    New_Line;
+
    --  Conclusion
    Put_Line ("-- End of briefing --");
 end Ex02_Mission_Brief;
