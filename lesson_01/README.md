@@ -2,7 +2,7 @@
 
 **Phase 1 — Fundamentals**
 
-Set up a professional Ada toolchain without administrator rights, create a first
+Set up a professional Ada toolchain, with or without administrator rights, create a first
 [Alire](https://alire.ada.dev) project, and learn the anatomy of an Ada program.
 The build is configured so that any warning or style issue stops it.
 
@@ -11,7 +11,7 @@ Course notes (French): [`lecon_01_premier_programme.pdf`](lecon_01_premier_progr
 ## Objectives
 
 - Explain why Ada is used in safety-critical and defense systems.
-- Install Alire, the GNAT compiler and GPRbuild in a user directory.
+- Install Alire, the GNAT compiler and GPRbuild, with or without administrator rights.
 - Create, build and run a project with `alr init`, `alr build` and `alr run`.
 - Read the structure of an Alire project: `alire.toml`, the `.gpr` file, `src/`.
 - Write a program with `with`, `use`, `procedure`, `begin` and `end`.
@@ -28,6 +28,31 @@ Course notes (French): [`lecon_01_premier_programme.pdf`](lecon_01_premier_progr
 | `alr` (Alire) | Project and dependency manager, installs the toolchain | `cargo`, `pip` + `venv` |
 | GNAT | Ada compiler (GCC-based) | `gcc` |
 | GPRbuild | Build tool driven by `.gpr` project files | `make`, CMake |
+
+### Installation on Windows
+
+Only the way `alr` itself is installed differs; everything after that is the same.
+
+| Method | Admin rights | Steps |
+|---|---|---|
+| Installer | Yes | Run `alr-X.Y.Z-installer-x86_64-windows.exe` from the [Alire releases](https://github.com/alire-project/alire/releases). If `Get-Command alr` fails in a regular terminal, add `C:\Program Files\Alire\bin` to the system `PATH`. |
+| winget | Yes | `winget install --id AdaLang.Alire --exact` |
+| Zip archive | No | Extract `alr-X.Y.Z-bin-x86_64-windows.zip` into a user folder and add its `bin` directory to the user `PATH`. |
+
+Then, in every case:
+
+```sh
+alr toolchain --select   # accept MSYS2, pick gnat_native and gprbuild
+alr version
+alr toolchain
+```
+
+Install the **Ada & SPARK** extension by AdaCore in VS Code. On Linux and macOS,
+extract the archive and add its `bin` directory to the `PATH`.
+
+Do not mix methods: two `alr` executables on the `PATH` make it unclear which one runs.
+
+### Build steps
 
 A build goes through three steps: **compile**, **bind** and **link**. The binder
 (`gnatbind`) checks that every unit of the program was compiled consistently
