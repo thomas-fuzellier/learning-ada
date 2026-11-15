@@ -9,7 +9,7 @@ licenses = "MIT"
 website = ""
 tags = []
 
-executables = ["lesson_02", "ex01_type_limits", "ex02_mission_average"]
+executables = ["lesson_02", "ex01_type_limits", "ex02_mission_average", "ex03_radar_heading"]
 
 [build-switches]
 "*".compile_checks = "Errors"
