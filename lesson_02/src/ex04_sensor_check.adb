@@ -8,7 +8,7 @@ procedure Ex04_Sensor_Check is
    Sensor_Number   : constant Positive  :=
       Character'Pos (Current_Sensor) - Character'Pos (First_Sensor) + 1;
 
-   Raw_Reading     : constant String    := "  42";
+   Raw_Reading     : constant String    := "  42 ";
    Reading         : constant Integer   := Integer'Value (Raw_Reading);
    Max_Reading     : constant Positive  := 100;
    Min_Reading     : constant Natural   := 0;
@@ -17,7 +17,7 @@ procedure Ex04_Sensor_Check is
    In_Range        : constant Boolean   :=
       Reading >= Min_Reading and then Reading <= Max_Reading;
    Alarm           : constant Boolean   :=
-      In_Range = False or else Reading > Alarm_Threshold;
+      not In_Range or else Reading > Alarm_Threshold;
 begin
    Put_Line ("SENSOR CHECK");
 
