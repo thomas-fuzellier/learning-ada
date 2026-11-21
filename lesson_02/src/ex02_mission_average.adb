@@ -12,7 +12,7 @@ procedure Ex02_Mission_Average is
       Leg_1_Km + Leg_2_Km + Leg_3_Km + Leg_4_Km;
    Average   : constant Float    :=
       Float (Total_Km) / Float (Leg_Count);
-   Rounded   : constant Positive := Integer (Average);
+   Rounded   : constant Positive := Positive (Average);
    Truncated : constant Positive := Total_Km / Leg_Count;
 begin
    Put_Line ("MISSION AVERAGE");
