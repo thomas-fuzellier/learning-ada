@@ -12,11 +12,13 @@ alr build
 alr run
 ```
 
+If something goes wrong, see [Troubleshooting](troubleshooting.md).
+
 ## Lessons
 
 ### Phase 1 — Fundamentals
 - [x] [01 — Getting started](lesson_01/)
-- [ ] 02 — Variables and scalar types
+- [x] [02 — Variables and scalar types](lesson_02/)
 - [ ] 03 — Defining your own types
 - [ ] 04 — Control structures
 - [ ] 05 — Subprograms
