@@ -3,13 +3,14 @@ with Ada.Text_IO;
 use Ada.Text_IO;
 
 procedure Ex03_Radar_Heading is
-   Start_Heading : constant Natural       := 10;
+   Full_Circle   : constant         := 360;
+   Start_Heading : constant Natural := 10;
+   Turn_1        : constant Integer := -30;
+   Turn_2        : constant Integer := 400;
+   Turn_3        : constant Integer := -725;
+
    Mod_Column    : constant Positive_Count := 11;
    Rem_Column    : constant Positive_Count := 21;
-   Turn_1        : constant Integer        := -30;
-   Turn_2        : constant Integer        := 400;
-   Turn_3        : constant Integer        := -725;
-   Full_Circle   : constant                := 360;
 begin
    Put_Line ("RADAR HEADING");
    Put_Line ("Start heading:" & Start_Heading'Image);
