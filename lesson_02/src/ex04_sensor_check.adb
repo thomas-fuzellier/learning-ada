@@ -1,10 +1,11 @@
+--  Checks a sensor reading against its valid range and alarm threshold
 with Ada.Text_IO;
 use Ada.Text_IO;
 
 procedure Ex04_Sensor_Check is
    First_Sensor    : constant Character := 'A';
    Current_Sensor  : constant Character := 'C';
-   Raw_Reading     : constant String    := "  42x";
+   Raw_Reading     : constant String    := "  42";
    Reading         : constant Integer   := Integer'Value (Raw_Reading);
    Max_Range       : constant Positive  := 100;
    Min_Range       : constant Natural   := 0;
