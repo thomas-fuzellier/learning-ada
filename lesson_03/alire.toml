@@ -8,7 +8,7 @@ licenses = "MIT OR Apache-2.0 WITH LLVM-exception"
 website = ""
 tags = []
 
-executables = ["lesson_03", "ex01_flight_limits", "ex02_track_status", "ex03_radar_heading"]
+executables = ["lesson_03", "ex01_flight_limits", "ex02_track_status", "ex03_radar_heading", "ex04_sensor_types"]
 
 [build-switches]
 "*".compile_checks = "Errors"
