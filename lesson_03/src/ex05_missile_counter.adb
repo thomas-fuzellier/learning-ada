@@ -1,4 +1,4 @@
---  Fires missiles until the launcher counter raises
+--  Fires missiles until the launcher counter raises Constraint_Error
 with Ada.Text_IO;
 use Ada.Text_IO;
 
