@@ -27,7 +27,7 @@ procedure Ex04_Sensor_Types is
 begin
    Put_Line ("SENSOR TYPES");
 
-   Put_Line ("Altitude (m): " & Altitude_M'First'Image 
+   Put_Line ("Altitude (m): " & Altitude_M'First'Image
      & " .. " & Altitude_M'Last'Image);
 
    Put_Line ("Altitude digits: " & Altitude_M'Digits'Image);
