@@ -7,19 +7,19 @@ procedure Ex05_Missile_Counter is
 
    Loaded_Input : constant String := "2";
 
-   Remaining_Missile : Missile_Count :=
+   Remaining_Missiles : Missile_Count :=
      Missile_Count'Value (Loaded_Input);
 begin
    Put_Line ("LAUNCHER");
 
-   Put_Line ("Loaded:" & Remaining_Missile'Image);
+   Put_Line ("Loaded:" & Remaining_Missiles'Image);
 
-   Remaining_Missile := Remaining_Missile - 1;
-   Put_Line ("Fired, remaining:" & Remaining_Missile'Image);
+   Remaining_Missiles := Remaining_Missiles - 1;
+   Put_Line ("Fired, remaining:" & Remaining_Missiles'Image);
 
-   Remaining_Missile := Remaining_Missile - 1;
-   Put_Line ("Fired, remaining:" & Remaining_Missile'Image);
+   Remaining_Missiles := Remaining_Missiles - 1;
+   Put_Line ("Fired, remaining:" & Remaining_Missiles'Image);
 
-   Remaining_Missile := Remaining_Missile - 1;
-   Put_Line ("Fired, remaining:" & Remaining_Missile'Image);
+   Remaining_Missiles := Remaining_Missiles - 1;
+   Put_Line ("Fired, remaining:" & Remaining_Missiles'Image);
 end Ex05_Missile_Counter;
