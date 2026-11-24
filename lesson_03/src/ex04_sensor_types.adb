@@ -16,7 +16,7 @@ procedure Ex04_Sensor_Types is
    Cruise_Altitude_M  : constant Altitude_M :=
      Altitude_M (Float (Cruise_Altitude_Ft) * Feet_To_Meters);
 
-   Cell_Reading        : constant String  := "1.1";
+   Cell_Reading : constant String := "1.1";
 
    Cell_V : constant Voltage := Voltage'Value (Cell_Reading);
    Pack_V : constant Voltage := Cell_V * Cell_Count;
@@ -27,8 +27,8 @@ procedure Ex04_Sensor_Types is
 begin
    Put_Line ("SENSOR TYPES");
 
-   Put_Line ("Altitude (m): " & Altitude_M'First'Image &
-     " .. " & Altitude_M'Last'Image);
+   Put_Line ("Altitude (m): " & Altitude_M'First'Image 
+     & " .. " & Altitude_M'Last'Image);
 
    Put_Line ("Altitude digits: " & Altitude_M'Digits'Image);
 
