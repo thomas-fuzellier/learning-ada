@@ -19,7 +19,7 @@ If something goes wrong, see [Troubleshooting](troubleshooting.md).
 ### Phase 1 — Fundamentals
 - [x] [01 — Getting started](lesson_01/)
 - [x] [02 — Variables and scalar types](lesson_02/)
-- [X] 03 — Defining your own types
+- [x] [03 — Defining your own types](lesson_03/)
 - [ ] 04 — Control structures
 - [ ] 05 — Subprograms
 - [ ] 06 — Arrays and strings
